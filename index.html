@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EdukasiMu</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="../img/icon.png" type="image/png" sizes="16x16">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  
+   .navbar {
+    width: 100%;
+    background-color: #007BFF;
+    overflow: auto;
+    
+  }
+  
+  .atasshad {
+    box-shadow: 4px 1px 3px 2px rgba(136, 133, 133, 0.349);
+  }
+  
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar p {
+    float: right;
+    text-align: center;
+    margin: 14px 9px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+  }
+  
+  
+  .navbar a:hover {
+    background-color: rgba(83, 218, 70, 0.5);
+    
+  }
+  
+  .active {
+    background-color: #ff0080;
+  }
+  
+  
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  } 
+  
+  
+  body {
+    font-family: Arial;
+    padding: 20px;
+    background: #f1f1f1;
+  }
+  
+  
+  .header {
+    padding: 15px;
+    font-size: 13px;
+    
+    
+  }
+  
+  /* Set layout */
+  
+  .leftcolumn {   
+    float: left;
+    width: 70%;
+  }
+  
+  
+  .rightcolumn {
+    float: left;
+    width: 30%;
+    padding-left: 20px;
+  }
+  
+  
+  .card {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+     box-shadow: 4px 1px 3px 2px rgba(136, 133, 133, 0.349);
+  }
+  .card .about {
+    text-align: center;
+  }
+  
+  .card .about img {
+    text-align: center;
+    height:100px; 
+    width: 100px; 
+    border-radius: 100%; 
+    
+  }
+  
+  /* Akhir Set layout */
+  
+  /* Clear setelah columns layout */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  
+  .footer {
+    padding: 1px;
+    text-align: center;
+    margin-top: 35px;
+    font-size: 14px;
+  }
+  
+  /* buat responsive  */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  .bgpostview {
+    background-color: #8d918d0e;
+    margin: 4px 0px;
+    padding: 5px;
+  }
+  
+  .judulpostview {
+   
+    margin-bottom: -2px;
+  
+  }
+  
+  .tglpost {
+    font-size: 10px; 
+    padding-bottom: 35px;
+  }
+  
+  .selengkap {
+    background-color: #2a4d2b;
+    border: none;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  .selengkap link { 
+    color: rgb(243, 198, 0);
+  
+  }
+  p {
+    font-size: 14px;
+    font-family: Poppins;
+  }
+  a:link { 
+  text-decoration: none; 
+  
+  }
+  
+  .img {
+  width: 100%;
+  height: 250px;
+  padding: 0px;
+  }
+  
+  .textc {
+    top: 50%;
+    left: 50%;
+    margin: 0px 0px 0px 0px;
+    padding-top: 40px;
+    text-align: center;
+    }
+  
+  
+  </style>
+</head>
+<body>
+  <div class="header">
+     <img src="../img/logo.png"/>
+  </div>
+  <div class="atasshad">
+      <div class="navbar">
+        <a class="active" href="../../"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="../../page/contac.html"><i class="fa fa-fw fa-envelope"></i> Kontak Kami</a>
+        <a href="../../page/tentang-kami.html"><i class="fa-solid fa-address-card"></i> Tentang Kami</a>
+        <a href="../../page/disclaimer.html"><i class="fa-solid fa-circle-exclamation"></i> Disclaimer</a>
+</div> 
+  
+  </div>
+
+<div class="row">
+  <div class="leftcolumn">
+    
+        <div class="card">
+          <a href="./post/bahaya-merokok.html">
+          <img class="img" src="../img/merokok.jpg"/>
+          <div class="bgpostview"> <h2 class="judulpostview">Bahaya Merokok Bagi Kesehatan !!</h2></a>
+                <p class="tglpost"><i class="fa-solid fa-user"></i> admin</span> <i class="fa-solid fa-calendar-days"></i> 29 November 2022</p>
+                <p>Dalam ilmu medis seseorang dikatakan sebagai perokok ketika sudah mengisap lebih dari 100 batang rokok. Perokok aktif adalah seseorang yang sudah menghabiskan 100 batang rokok dan tetap merokok dalam satu tahun terak[...]</p>
+        </div>
+          <p><a href="./post/bahaya-merokok.html" class="selengkap">Selengkapnya >></a></p>
+        </div>
+
+        <div class="card">
+          <a href="./post/bahaya-narkoba.html">
+          <img class="img" src="../img/narkoba.jpg"/>
+          <div class="bgpostview"> <h2 class="judulpostview">Bahaya Narkoba !!</h2></a>
+                <p class="tglpost"><i class="fa-solid fa-user"></i> admin</span> <i class="fa-solid fa-calendar-days"></i>  29 November 2022</p>
+                <p>Narkotika adalah zat atau obat baik yang bersifat alamiah, sintetis, maupun semi sintetis yang menimbulkan efek penurunan kesadaran, halusinasi, serta daya rangsang.
+
+                  Sementara menurut UU Narkotika pasal 1 ayat 1 [...]</p>
+        </div>
+          <p><a href="./post/bahaya-narkoba.html" class="selengkap">Selengkapnya >></a></p>
+        </div>
+
+        <div class="card">
+          <a href="./post/bahaya-minuman-keras.html">
+          <img class="img" src="../img/miras.jpg"/>
+          <div class="bgpostview"> <h2 class="judulpostview">Bahaya Minuman Keras</h2></a>
+                <p class="tglpost"><i class="fa-solid fa-user"></i> admin</span> <i class="fa-solid fa-calendar-days"></i>  29 November 2022</p>
+                <p>Minuman beralkohol bukan hal yang asing dan cukup mudah ditemui bahkan di warung-warung tertentu. Padahal, semestinya minuman memabukkan ini hanya bisa ditemui di tempat-tempat khusus yang mengantongi izin. Kondisi itu diperparah dengan[...]</p>
+        </div>
+          <p><a href="./post/bahaya-minuman-keras.html" class="selengkap">Selengkapnya >></a></p>
+        </div>
+
+        <div class="card">
+          <a href="./post/bahaya-bersikap-apatis-keanak.html">
+          <img class="img" src="../img/apatis.jpg"/>
+          <div class="bgpostview"> <h2 class="judulpostview">Bahaya Sikap Apatis Bagi Anak-Anak</h2></a>
+                <p class="tglpost"><i class="fa-solid fa-user"></i> admin</span> <i class="fa-solid fa-calendar-days"></i>  29 November 2022</p>
+                <p>Tahukah anda apa itu sikap apatis? Sederhananya sikap apatis merupakan suatu sikap dimana seseorang kurang atau bahkan tidak sama sekali memiliki kepedulian terhadap kondisi lingkungan sekitar. Menurut News Medical Life Science, seseorang dapat dikatakan apatis jika mereka menujukkan kurangnya perasaan, minat, dan perhatian khusus tentang situasi tertentu atau kehidupan secara umum. Sikap ini juga kerap dikaitkan dengan kondisi mental atau gangguan tertentu. [...]</p>
+        </div>
+          <p><a href="./post/bahaya-bersikap-apatis-keanak.html" class="selengkap">Selengkapnya >></a></p>
+        </div>
+
+        <div class="card">
+          <a href="./post/bahaya-bullying.html">
+          <img class="img" src="../img/bully.jpg"/>
+          <div class="bgpostview"> <h2 class="judulpostview">Bahaya Bahaya Bullying</h2></a>
+                <p class="tglpost"><i class="fa-solid fa-user"></i> admin</span> <i class="fa-solid fa-calendar-days"></i>  29 November 2022</p>
+                <p>Bullying diartikan sebagai tindakan menyerang atau kekerasan yang dilakukan pada fisik maupun mental seseorang. Bullying bisa dilakukan oleh satu orang atau lebih. Biasanya, pelaku bullying akan mengintimidasi dan membuat korbannya merasa tidak berdaya. Kasus bullying paling sering ditemukan di lingkungan sekolah dan menimpa anak-anak[...]</p>
+        </div>
+          <p><a href="./post/bahaya-bullying.html" class="selengkap">Selengkapnya >></a></p>
+        </div>
+        <div class="card">
+          <center>
+          <a href="../../2.html">Postingan Sebelumnya</a>
+          </center>
+        </div>
+
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <p id="tgll"></p>
+    </div>
+    <div class="card">
+      <h3>About Me</h3>
+        <div class="about">
+     <img src="../img/pp.png"/>
+       
+          <p>G.231.22.0045</p>
+          <p>Moh. HarySakti Rahanyamtel</p>
+          
+          <hr>
+          <img src="../img/gilang.jpg"/>
+          <p>G.231.22.0035</p>
+          <p>Gilang Akbar</p>
+       
+      </div>
+    </div>
+    <div class="card">
+      <h3>Link Terkait</h3>
+      <p>Kementerian Kesehatan RI Quit Line Berhenti Merokok:</p>
+      <p>0-800-177-6565</p>
+      <hr>
+      <p>Contact Center BNN di nomor CAll : 184 <br>SMS : 1784<br>WA BNN : 081221675675</p>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p><a href="https://www.instagram.com/arierahanyamtel/"><i class="fa-brands fa-instagram"></i> arierahanyamtel</a></p>
+      <p><a href="https://www.instagram.com/gilangakbr_7"><i class="fa-brands fa-instagram"></i> gilangakbr_7</a></p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+&copy EdukasiMu 2022
+</div>
+
+
+<script>
+
+// Tanggal
+let arrBulan = [
+                "Januari",
+                "Februari",
+                "Maret",
+                "April",
+                "Mei",
+                "Juni",
+                "Juli",
+                "Agustus",
+                "September",
+                "Oktober",
+                "November",
+                "Desember",
+              ];
+              let txt = "";
+             
+              let text_el = document.querySelector("p#tgll");
+              setInterval((a) => {
+                var d = new Date();
+                const jam = d.getHours().toString().padStart(2, 0);
+                const menit = d.getMinutes().toString().padStart(2, 0);
+                const detik = d.getSeconds().toString().padStart(2, 0);
+                const tgl = d.getDate();
+                const bln = d.getMonth();
+                const thn = d.getFullYear();
+                const bulan = arrBulan[bln];
+                text_el.innerHTML =
+                  txt +
+                  "<i class='fa-solid fa-clock'></i> " +
+                  jam +
+                  ":" +
+                  menit +
+                  ":" +
+                  detik +
+                  "<br><i class='fa-solid fa-calendar-days'></i> " +
+                  tgl +
+                  "-" +
+                  bulan +
+                  "-" +
+                  thn +
+                  "";
+              }, 250);
+
+</script>
+</body>
+</html>
